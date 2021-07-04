@@ -1,0 +1,32 @@
+.card-img-top {
+    height: 20rem !important;
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+}
+
+.card {
+    -webkit-box-shadow: 6px 5px 5px 1px rgba(0, 0, 0, 0.33);
+    box-shadow: 6px 5px 5px 1px rgba(0, 0, 0, 0.33);
+    cursor: pointer;
+    background-color: rgb(63, 63, 63) !important;
+    color: white;
+    border-radius: 15px !important;
+    border: none !important;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.card:hover {
+    animation: shadow 0.5s forwards;
+}
+
+@keyframes shadow {
+    from {
+        -webkit-box-shadow: 6px 5px 5px 1px rgba(0, 0, 0, 0.33);
+        box-shadow: 6px 5px 5px 1px rgba(0, 0, 0, 0.33);
+    }
+
+    to {
+        -webkit-box-shadow: 6px 10px 8px 3px rgba(0, 0, 0, 0.74);
+        box-shadow: 6px 10px 8px 3px rgba(0, 0, 0, 0.74);
+    }
+}

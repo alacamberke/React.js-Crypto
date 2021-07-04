@@ -1,0 +1,38 @@
+.list-group-item{
+    cursor: pointer;
+}
+
+.text{
+    margin-left: 4%;
+}
+
+.right-arrow{
+    float: right;
+}
+
+.list-group-item:hover{
+    animation: move 0.8s forwards;
+}
+
+@keyframes move{
+    0%{
+        background-color: white;
+    }
+    50%{
+        background-color: black;
+        color: white;
+    }
+    100%{
+        background-color: black;
+        color: white;
+    }
+}
+
+.black{
+    background-color: black !important;
+    color: white;
+}
+
+@media screen and (max-width:1080px){
+    
+}

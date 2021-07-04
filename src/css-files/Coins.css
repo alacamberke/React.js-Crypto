@@ -1,0 +1,64 @@
+.coin-image {
+    width: 60px;
+}
+
+.coin-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.coin-list-item {
+    margin-bottom: 2rem;
+}
+
+.myButton {
+    box-shadow: inset 0px 1px 0px 0px #d9fbbe;
+    background: linear-gradient(to bottom, #b8e356 5%, #a5cc52 100%);
+    background-color: #b8e356;
+    border-radius: 6px;
+    border: 1px solid #83c41a;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #86ae47;
+    width: 100px;
+    text-align: center;
+}
+
+.myButton:hover {
+    background: linear-gradient(to bottom, #a5cc52 5%, #b8e356 100%);
+    background-color: #a5cc52;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.successAlert{
+    text-align: center;
+    position: fixed !important;
+    bottom: 30px !important;
+    right: 50px;
+    width: 20% !important;
+    z-index: 1;
+}
+.dangerAlert{
+    text-align: center;
+    position: fixed !important;
+    bottom: 30px !important;
+    right: 50px;
+    width: 20% !important;
+    z-index: 1;
+}
+
+.searchCoin{
+    border: 1px solid black !important;
+}
