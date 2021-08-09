@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { useState } from 'react';
 import { ThemeContext } from '../../Context/Context';
 import Getcoins from '../Coins/Getcoins';
-
+import '../../css-files/Coins.css'
 
 const Coins = () => {
 

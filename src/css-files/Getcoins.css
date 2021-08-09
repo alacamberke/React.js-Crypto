@@ -5,6 +5,7 @@
 .coin-list {
     list-style-type: none;
     padding: 0;
+    font-size: 20px;
 }
 
 .coin-list-item {
@@ -61,4 +62,27 @@
 
 .searchCoin{
     border: 1px solid black !important;
+}
+
+.page-button{
+    margin-right: 5px;
+}
+
+@media screen and (max-width:1085px){
+    .coin-name{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:827px){
+    .col-sm{
+        padding: 0 !important;
+    }
+}
+
+@media screen and (max-width:575px){
+    .col-sm{
+        width: 25% !important;
+        font-size: 15px !important;
+    }
 }

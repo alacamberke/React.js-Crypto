@@ -1,7 +1,7 @@
 import { faTruckLoading } from '@fortawesome/free-solid-svg-icons';
 import React, { useContext, useEffect, useState } from 'react';
 import { ThemeContext } from '../../Context/Context';
-import "../../css-files/Getcoins.css";
+import '../../css-files/Getcoins.css';
 import { BeatLoader } from 'react-spinners';
 
 const Getcoins = (props) => {
@@ -36,8 +36,8 @@ const Getcoins = (props) => {
             <div className="page-numbers mt-3">
                 {pageNumbers.map(number => {
                     return <button
-                        className={currentPage === number ? "bg-dark text-white" : null}
-                        onClick={() => setCurrentPage(number)}>{number}</button>
+                        className={currentPage === number ? "bg-dark text-white page-button" : "page-button"}
+                        onClick={() => setCurrentPage(number)} key={number}>{number}</button>
                 })}
             </div>
 
@@ -46,20 +46,20 @@ const Getcoins = (props) => {
                 {
                     currentCoins.filter(coins => coins.name.toLowerCase().indexOf(props.searchCoin) !== -1)
                         .map((filteredCoin, index) => {
-                            return <div key={filteredCoin}>
+                            return <div key={filteredCoin.id}>
 
                                 <li className="coin-list-item" >
                                     <div className="row">
                                         <div className="col-sm">
                                             <img src={filteredCoin.image} className="coin-image"></img>
                                         </div>
-                                        <div className="col-sm">
-                                            <h4>{filteredCoin.name}</h4>
+                                        <div className="col-sm coin-name">
+                                            <p>{filteredCoin.name}</p>
                                         </div>
-                                        <div className="col-sm">
-                                            <h4>{filteredCoin.current_price} $</h4>
+                                        <div className="col-sm coin-price">
+                                            <p>{filteredCoin.current_price} $</p>
                                         </div>
-                                        <div className="col-sm">
+                                        <div className="col-sm coin-button">
                                             <a href={"/Detail/" + filteredCoin.id} className="myButton mr-5 mb-1">Detail</a>
                                         </div>
                                     </div>

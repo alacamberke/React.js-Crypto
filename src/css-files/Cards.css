@@ -1,7 +1,10 @@
 .card-img-top {
-    height: 20rem !important;
     border-top-left-radius: 15px !important;
     border-top-right-radius: 15px !important;
+}
+
+.card-text{
+    font-size: 13px;
 }
 
 .card {

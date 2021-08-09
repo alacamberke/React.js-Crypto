@@ -14,6 +14,10 @@
     animation: move 0.8s forwards;
 }
 
+.responsive-titles{
+    display: none;
+}
+
 @keyframes move{
     0%{
         background-color: white;
@@ -33,6 +37,22 @@
     color: white;
 }
 
-@media screen and (max-width:1080px){
-    
+@media screen and (max-width:1085px){
+    .responsive-titles{
+        display: block;
+        text-align: center;
+        font-size: 45px;
+    }
+
+    .list-group-item{
+        font-size: 15px;
+    }
+
+    .item-icon{
+        display: none;
+    }
+
+    .right-arrow{
+        display: none;
+    }
 }
